@@ -1,0 +1,57 @@
+.nav-container > ul > li:nth-child(1) {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 16px;
+}
+
+.post {
+  background-color: #1e1e1e;
+  border: 2px solid #505050;
+  border-radius: 8px;
+}
+
+.post > img {
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.post-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+}
+
+.botoes-interação {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-legenda {
+  display: flex;
+  justify-content: space-between;
+}
+
+.autor-post {
+  display: flex;
+  gap: 8px;
+}
+
+.autor-post > img {
+  width: 20px;
+}
+
+@media (max-width: 1240px) {
+  .feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
