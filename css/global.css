@@ -1,0 +1,52 @@
+:root {
+  --preto1: #1e1e1e;
+  --preto2: #111111;
+  --branco: #fafafa;
+  --roxo: #8e52fe;
+  --azul: #00b4d8;
+}
+
+body {
+  color: var(--branco);
+  font-family: "Rubik", serif;
+
+  background-color: var(--preto1);
+  background-image: url(/img/blob1.svg), url(/img/blob2.svg);
+  background-position: left top, right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: var(--preto2);
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+input {
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+
+  font-family: "Rubik", serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: none;
+  }
+}
