@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 40px;
+
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 60px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  flex-grow: 1;
+}
+
+.formulario-cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formulario-cadastro > label:not(:first-child) {
+  padding-top: 16px;
+}
+
+.formulario-cadastro > input {
+  background: #1e1e1e;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+}
+
+.recuperar-senha {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.botao {
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+
+.voltar {
+  background-color: transparent;
+  border: 2px solid #8e52fe;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.voltar > img {
+  height: 12px;
+}
+
+.cadastrar {
+  background-color: #8e52fe;
+  border: 2px solid transparent;
+}
